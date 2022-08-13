@@ -25,4 +25,9 @@ echo "a*b+c = ${result[v2]}"
 echo "c+a/b = ${result[v3]}"
 echo "a%b+c = ${result[v4]}"
 
+echo "Print the number in ascending order"
 sort -n <(printf "%s\n" "${result[@]}")
+
+echo "Print the number in descending order"
+sort -nr <(printf "%s\n" "${result[@]}")
+
